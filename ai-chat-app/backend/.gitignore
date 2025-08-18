@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# FastAPI
+.pytest_cache/
+.coverage
+htmlcov/
+
+# AI/ML specific
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+models/
+checkpoints/
+wandb/
+
+# Memory stores
+chroma_store/
+vector_db/
+redis_data/
+
+# Audio processing
+audio_temp/
+uploads/
+*.wav
+*.mp3
+*.m4a
+
+# Local development
+.env
+.env.local
+instance/
+.webassets-cache
+
+# Logs
+logs/
+*.log
+
+# Testing
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+cover/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Docker
+Dockerfile.prod
+docker-compose.override.yml

@@ -1,0 +1,12 @@
+FastAPI
+LangChain
+openai
+redis
+chromadb
+uvicorn
+pydantic
+python-dotenv
+speechrecognition
+gtts
+numpy
+scipy
