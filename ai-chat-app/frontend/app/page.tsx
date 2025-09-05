@@ -62,7 +62,7 @@ export default function ChatPage() {
 
       setMessages((prev) => [...prev, assistantMessage])
 
-      // Process streaming response
+      
       const reader = stream.getReader()
       const decoder = new TextDecoder()
 
@@ -107,7 +107,7 @@ export default function ChatPage() {
       />
 
       <div className="relative z-10 flex h-screen max-w-6xl mx-auto">
-        {/* Main Chat Area */}
+       
         <div className="flex-1 flex flex-col">
           <ChatHeader />
 
@@ -146,7 +146,6 @@ export default function ChatPage() {
           </div>
         </div>
 
-        {/* Document Sidebar */}
         {showDocuments && (
           <div className="w-80 border-l border-white/10 p-4 overflow-y-auto">
             <DocumentUpload />
