@@ -67,7 +67,6 @@ export function ChatInput({ onSendMessage }: ChatInputProps) {
       setIsRecording(true)
       setRecordingTime(0)
 
-      // Start timer
       timerRef.current = setInterval(() => {
         setRecordingTime((prev) => prev + 1)
       }, 1000)
@@ -97,7 +96,6 @@ export function ChatInput({ onSendMessage }: ChatInputProps) {
   const processAudioToText = async (audioBlob: Blob) => {
     console.log("[v0] Processing audio to text...", audioBlob.size, "bytes")
 
-    // Simulate API call delay
     setTimeout(() => {
       const simulatedText =
         "This is a simulated transcription of your voice message. In a real implementation, this would use a speech-to-text service."
@@ -122,7 +120,7 @@ export function ChatInput({ onSendMessage }: ChatInputProps) {
             {isRecording && (
               <>
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
-                <span className="text-white">Recording: {formatTime(recordingTime)}</span>
+                <span className="text-white">Recordings: {formatTime(recordingTime)}</span>
               </>
             )}
             {isProcessing && (
