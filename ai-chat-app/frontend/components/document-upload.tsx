@@ -80,7 +80,7 @@ export function DocumentUpload() {
     <Card className="backdrop-blur-xl bg-white/5 border-white/20">
       <CardHeader>
         <CardTitle className="text-white">Knowledge Bases</CardTitle>
-        <p className="text-sm text-gray-400">Upload documents to enhance AI responses with your content</p>
+        <p className="text-sm text-gray-400">Upload document to enhance AI responses with your content</p>
       </CardHeader>
       <CardContent className="space-y-4">
         <div
