@@ -16,7 +16,7 @@ const suggestions = [
 export function QuickSuggestions({ onSuggestionClick }: QuickSuggestionsProps) {
   return (
     <div className="p-4 max-w-3xl mx-auto opacity-0 animate-in fade-in slide-in-from-bottom-4 duration-700">
-      <p className="text-sm text-gray-400 mb-3 text-center">Quick suggestions to get started:</p>
+      <p className="text-sm text-gray-400 mb-3 text-center">Quick suggestion to get started:</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {suggestions.map((suggestion, index) => (
           <Button
