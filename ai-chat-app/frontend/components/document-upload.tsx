@@ -105,7 +105,7 @@ export function DocumentUpload() {
 
         {documents.length > 0 && (
           <div className="space-y-2">
-            <h4 className="text-sm font-medium text-white">Uploaded Document</h4>
+            <h4 className="text-sm font-medium text-white">Uploaded Documents</h4>
             {documents.map((doc) => (
               <div key={doc.id} className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/10">
                 <File className="w-4 h-4 text-white" />

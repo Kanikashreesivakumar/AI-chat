@@ -24,7 +24,7 @@ export function VoiceVisualizer({ isRecording, audioStream }: VoiceVisualizerPro
     const ctx = canvas.getContext("2d")
     if (!ctx) return
 
-    // Setup audio analysis
+ 
     const audioContext = new AudioContext()
     const analyser = audioContext.createAnalyser()
     const source = audioContext.createMediaStreamSource(audioStream)
