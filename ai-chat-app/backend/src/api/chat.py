@@ -1,6 +1,9 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+from typing import List
+
 from services.ai_service import generate_response
+from models.chat_models import ChatMessage
 
 router = APIRouter()
 
@@ -10,10 +13,28 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     response: str
 
-@router.post("/chat", response_model=ChatResponse)
+@router.post("/", response_model=ChatResponse)
 async def chat_endpoint(chat_request: ChatRequest):
-    try:
-        response_text = await generate_response(chat_request.user_input)
-        return ChatResponse(response=response_text)
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    return ChatResponse(response="Hello from backend!")
+
+@router.get("/history/{user_id}", response_model=List[ChatMessage])
+async def get_chat_history(user_id: str):
+    # TODO: Retrieve chat history from vector DB or your database
+    # Example placeholder:
+    # history = db.get_history(user_id)
+    history = []  # Replace with actual retrieval logic
+    return history
+
+class UpdateChatRequest(BaseModel):
+    message_id: str
+    new_content: str
+
+@router.put("/chat", response_model=ChatResponse)
+async def update_chat_message(update_request: UpdateChatRequest):
+    # TODO: Update the message in your database/vector DB
+    # Example placeholder:
+    # success = db.update_message(update_request.message_id, update_request.new_content)
+    success = True  # Replace with actual update logic
+    if not success:
+        raise HTTPException(status_code=404, detail="Message not found")
+    return ChatResponse(response="Message updated successfully.")
