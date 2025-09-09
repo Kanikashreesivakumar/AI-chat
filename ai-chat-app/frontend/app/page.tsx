@@ -15,7 +15,7 @@ export default function ChatPage() {
     {
       id: "1",
       content:
-        "Hello! I'm your AI assistant with RAG capabilities. Upload documents to enhance my knowledge, or ask me anything!",
+        "Hello! I'm your AI assistant with RAG capabilities. Upload documents to enhance my knowledge, or ask me anything ;) !",
       role: "assistant",
       timestamp: new Date(),
     },
