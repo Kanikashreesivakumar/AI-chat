@@ -21,7 +21,7 @@ async def chat_endpoint(chat_request: ChatRequest):
 async def get_chat_history(user_id: str):
     # TODO: Retrieve chat history from vector DB or your database
 
-    history = []  # Replace with actual retrieval logic
+    history = []  
     return history
 
 class UpdateChatRequest(BaseModel):
