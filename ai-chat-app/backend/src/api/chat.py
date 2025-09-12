@@ -19,7 +19,7 @@ async def chat_endpoint(chat_request: ChatRequest):
 
 @router.get("/history/{user_id}", response_model=List[ChatMessage])
 async def get_chat_history(user_id: str):
-    # TODO: Retrieve chat history from vector DB or your database
+  
 
     history = []  
     return history
