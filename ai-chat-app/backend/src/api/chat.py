@@ -36,4 +36,4 @@ async def update_chat_message(update_request: UpdateChatRequest):
     success = True  # Replace with actual update logic
     if not success:
         raise HTTPException(status_code=404, detail="Message not found")
-    return ChatResponse(response="Message updated successfully.")
+    return ChatResponse(response="Message updated ")
