@@ -16,4 +16,4 @@ app.include_router(chat_router, prefix="/chat")
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the AI Chat Application!"}
+    return {"message": "Welcome to the RAG AI Chat Application!"}
