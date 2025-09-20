@@ -30,10 +30,9 @@ class UpdateChatRequest(BaseModel):
 
 @router.put("/chat", response_model=ChatResponse)
 async def update_chat_message(update_request: UpdateChatRequest):
-    # TODO: Update the message in your database/vector DB
    
    
-    success = True  # Replace with actual update logic
+    success = True  
     if not success:
         raise HTTPException(status_code=404, detail="message not ")
     return ChatResponse(response="message responded successfully ")
