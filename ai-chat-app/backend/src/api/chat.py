@@ -34,5 +34,5 @@ async def update_chat_message(update_request: UpdateChatRequest):
    
     success = True  
     if not success:
-        raise HTTPException(status_code=404, detail=" failed ")
+        raise HTTPException(status_code=404, detail=" Message not sent ")
     return ChatResponse(response="message sent successfully ")
