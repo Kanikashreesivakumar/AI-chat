@@ -33,7 +33,7 @@ async def chat_endpoint(chat_request: ChatRequest):
         if chat_request.use_rag:
             context = vector_store.get_relevant_context(chat_request.user_input)
         
-        # Generate response
+    
         response = await generate_response(
             user_input=chat_request.user_input,
             use_rag=chat_request.use_rag,
@@ -46,7 +46,7 @@ async def chat_endpoint(chat_request: ChatRequest):
 
 @router.get("/history/{user_id}", response_model=List[ChatMessage])
 async def get_chat_history(user_id: str):
-    """Get chat history for a specific user"""
+    """Get chat history for specific user"""
     if user_id not in chat_history:
         return []
     
