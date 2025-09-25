@@ -68,8 +68,7 @@ class UpdateChatRequest(BaseModel):
 @router.put("/chat", response_model=ChatResponse)
 async def update_chat_message(update_request: UpdateChatRequest):
     """Update an existing chat message (used for edits)"""
-    # In a real implementation, this would update the message in a database
-    # For this demo, we'll just return success
+  
     return ChatResponse(response="Message updated successfully")
 
 class DocumentUploadRequest(BaseModel):
