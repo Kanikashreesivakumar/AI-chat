@@ -29,7 +29,6 @@ async def chat_endpoint(chat_request: ChatRequest):
     If use_rag is True, it will use the vector store to retrieve relevant context
     """
     try:
-        # Get context from vector store if RAG is enabled
         context = None
         if chat_request.use_rag:
             context = vector_store.get_relevant_context(chat_request.user_input)
