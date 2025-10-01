@@ -19,10 +19,9 @@ class VectorStore:
             model=settings.EMBEDDING_MODEL
         )
         
-        # Create path if it doesn't exist
+   
         os.makedirs(settings.VECTOR_DB_PATH, exist_ok=True)
         
-        # Initialize ChromaDB
         self.vector_store = Chroma(
             persist_directory=settings.VECTOR_DB_PATH,
             embedding_function=self.embedding_model
