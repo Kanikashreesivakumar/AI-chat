@@ -12,11 +12,10 @@ class VoiceService:
         with open(audio_path, "wb") as f:
             f.write(audio_file.file.read())
 
-        # Convert audio to the required format if necessary
         audio = AudioSegment.from_file(audio_path)
         audio.export(audio_path, format="wav")
 
-        # Send the audio file to the Whisper API for transcription
+
         with open(audio_path, "rb") as f:
             response = requests.post(self.whisper_api_url, files={"file": f})
 
