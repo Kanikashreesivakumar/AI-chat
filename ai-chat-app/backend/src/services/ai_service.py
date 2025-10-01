@@ -25,7 +25,6 @@ async def generate_response(user_input: str, use_rag: bool = False, context: Opt
     try:
         messages = []
         
-        # Add system prompt
         system_prompt = "You are a helpful AI assistant."
         if use_rag and context:
             system_prompt += " Use the following context to answer the user's question:\n" + context
