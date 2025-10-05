@@ -19,7 +19,7 @@ class VoiceService:
         with open(audio_path, "rb") as f:
             response = requests.post(self.whisper_api_url, files={"file": f})
 
-        os.remove(audio_path)  # Clean up the temporary file
+        os.remove(audio_path)  
 
         if response.status_code == 200:
             return response.json().get("text", "")
