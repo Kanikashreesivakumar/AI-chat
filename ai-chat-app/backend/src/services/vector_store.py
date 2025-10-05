@@ -84,7 +84,7 @@ class VectorStore:
         if not results:
             return None
         
-        # Combine the results into a single context string
+        
         context_parts = []
         
         for i, result in enumerate(results):
