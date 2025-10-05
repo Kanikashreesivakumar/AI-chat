@@ -55,7 +55,6 @@ class VectorStore:
         try:
             results = self.vector_store.similarity_search_with_relevance_scores(query, k=k)
             
-            # Format the results
             formatted_results = []
             for doc, score in results:
                 formatted_results.append({
