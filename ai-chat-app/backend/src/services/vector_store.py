@@ -88,7 +88,7 @@ class VectorStore:
         context_parts = []
         
         for i, result in enumerate(results):
-            # Add document with metadata
+            
             metadata_str = ", ".join([f"{key}: {value}" for key, value in result["metadata"].items()])
             context_parts.append(f"Document {i+1} [{metadata_str}]:\n{result['content']}\n")
         
