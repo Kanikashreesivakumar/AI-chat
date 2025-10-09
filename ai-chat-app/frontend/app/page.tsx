@@ -88,7 +88,7 @@ export default function ChatPage() {
         setStreamingMessageId(null)
       }
     } catch (error) {
-      console.error("[v0] Chat error:", error)
+      console.error("Chat error:", error)
       setIsTyping(false)
       setStreamingMessageId(null)
     }
