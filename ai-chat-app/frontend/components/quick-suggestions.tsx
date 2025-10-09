@@ -9,7 +9,7 @@ interface QuickSuggestionsProps {
 const suggestions = [
   "What can you help me with?",
   "Explain quantum computing",
-  "Write a summary of recent AI developments",
+
   "Help me brainstorm ideas",
 ]
 
