@@ -17,8 +17,7 @@ export const chatService = {
       }),
     })
 
-    // If your backend streams, handle response.body as a stream
-    // Otherwise, just parse JSON
+   
     if (response.body && typeof response.body.getReader === "function") {
       // Streaming response (if implemented in backend)
       return response.body
