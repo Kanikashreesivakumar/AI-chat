@@ -25,7 +25,7 @@ export function ChatHeader() {
 
         <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 border border-gray-600">
           <Wifi className="w-4 h-4 text-white" />
-          <span className="text-sm text-white font-medium">Online....</span>
+          <span className="text-sm text-white font-medium">Online</span>
         </div>
       </div>
     </header>
