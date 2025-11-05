@@ -19,7 +19,7 @@ export function ChatHeader() {
             <h1 className="text-xl font-semibold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               AI Chat Assistant
             </h1>
-            <p className="text-sm text-gray-400">Powered by RAG Technology!</p>
+            <p className="text-sm text-gray-400">Powered by RAG Technology</p>
           </div>
         </div>
 
