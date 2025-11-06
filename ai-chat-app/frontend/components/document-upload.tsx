@@ -40,7 +40,7 @@ export function DocumentUpload() {
         setDocuments((prev) => [...prev, result.document])
         console.log("[v0] Document uploaded successfully:", result.document.name)
       } else {
-        console.error("[v0] Upload failed:", result.error)
+        console.error("Upload failed:", result.error)
         alert(result.error || "Failed to upload document")
       }
     } catch (error) {
