@@ -38,7 +38,7 @@ export function DocumentUpload() {
 
       if (response.ok) {
         setDocuments((prev) => [...prev, result.document])
-        console.log("[v0] Document uploaded successfully:", result.document.name)
+        console.log("Document uploaded successfully:", result.document.name)
       } else {
         console.error("Upload failed:", result.error)
         alert(result.error || "Failed to upload document")
