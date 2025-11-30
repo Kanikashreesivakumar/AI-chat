@@ -44,7 +44,7 @@ export function DocumentUpload() {
         alert(result.error || "Failed to upload document")
       }
     } catch (error) {
-      console.error("Upload error:", error)
+      console.error("Uploads error:", error)
       alert("Failed to upload documents")
     } finally {
       setIsUploading(false)
