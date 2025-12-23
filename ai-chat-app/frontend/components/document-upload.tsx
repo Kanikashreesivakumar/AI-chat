@@ -41,7 +41,7 @@ export function DocumentUpload() {
         console.log("Document uploaded successfully:", result.document.name)
       } else {
         console.error("Upload failed:", result.error)
-        alert(result.error || "Failed to upload documents")
+        alert(result.error || "Failed to upload document")
       }
     } catch (error) {
       console.error("Upload error:", error)
