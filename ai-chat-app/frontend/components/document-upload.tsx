@@ -80,7 +80,7 @@ export function DocumentUpload() {
     <Card className="backdrop-blur-xl bg-white/5 border-white/20">
       <CardHeader>
         <CardTitle className="text-white">Knowledge Bases</CardTitle>
-        <p className="text-sm text-gray-400">U enponses with your content</p>
+        <p className="text-sm text-gray-400">Upload documents to enhance the AI responses with your content</p>
       </CardHeader>
       <CardContent className="space-y-4">
         <div
@@ -93,7 +93,7 @@ export function DocumentUpload() {
           onDragOver={(e) => e.preventDefault()}
           onDragEnter={() => setDragActive(true)}
           onDragLeave={() => setDragActive(false)}
-          onClick={() => document.getElementById("file-input")?hance the AI res.click()}
+          onClick={() => document.getElementById("file-input")?.click()}
         >
           <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
           <p className="text-sm text-gray-300 mb-1">
