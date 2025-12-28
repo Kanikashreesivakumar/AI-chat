@@ -120,7 +120,7 @@ export function ChatInput({ onSendMessage }: ChatInputProps) {
             {isRecording && (
               <>
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
-                <span className="text-white">Recor: {formatTime(recordingTime)}</span>
+                <span className="text-white">Recordings\: {formatTime(recordingTime)}</span>
               </>
             )}
             {isProcessing && (
