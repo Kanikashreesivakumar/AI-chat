@@ -126,7 +126,7 @@ export function ChatInput({ onSendMessage }: ChatInputProps) {
             {isProcessing && (
               <>
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-pulse" />
-                <span className="text-gray-400">P</span>
+                <span className="text-gray-400">Processing audio...</span>
               </>
             )}
           </div>
