@@ -53,7 +53,7 @@ export function VoiceVisualizer({ isRecording, audioStream }: VoiceVisualizerPro
 
         const gradient = ctx.createLinearGradient(0, canvas.height - barHeight, 0, canvas.height)
         gradient.addColorStop(0, "#ffffff")
-        gradient.addColorStop(1, "#615858ff")
+        gradient.addColorStop(1, "#635454ff")
 
         ctx.fillStyle = gradient
         ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight)
