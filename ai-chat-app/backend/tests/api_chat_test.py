@@ -5,7 +5,7 @@ Usage:
     pip install requests
     python api_chat_test.py
 
-Ensure backend is running at http://127.0.0.1:8000
+Ensure backend is running at
 """
 import requests
 
