@@ -174,7 +174,7 @@ export function ChatInput({ onSendMessage }: ChatInputProps) {
 
           <Button
             type="submit"
-            disabled={!message.trim() | isProcessing}
+            disabled={!message.trim()  isProcessing}
             className="bg-gradient-to-r from-gray-600 to-black hover:from-gray-700 hover:to-gray-900 text-white border-0 h-[60px] px-6 disabled:opacity-50"
           >
             <Send className="w-4 h-4" />
