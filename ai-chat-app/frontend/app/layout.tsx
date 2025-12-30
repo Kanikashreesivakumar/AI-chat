@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html l
+    <html lang="en">
       <body className="font-sans">
         {children}
         <Analytics />
