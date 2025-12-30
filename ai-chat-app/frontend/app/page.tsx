@@ -147,7 +147,7 @@ export default function ChatPage() {
         </div>
 
         {showDocuments && (
-          <div className="w-80 border-l border-white/10 p-4>
+          <div className="w-80 border-l border-white/10 p-4 overflow-y-auto">
             <DocumentUpload />
           </div>
         )}
