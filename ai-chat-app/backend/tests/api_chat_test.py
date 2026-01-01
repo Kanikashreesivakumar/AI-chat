@@ -8,13 +8,6 @@ Usage:
 Ensure backend is running at http://127.0.0.1:8000
 """
 import requests
-
-BACKEND_URL = "http://127.0.0.1:8000/chat/"
-
-
-def run_api_test():
-    payload = {"user_input": "Hello from API test", "use_rag": False}
-    print("Posting to", BACKEND_URL, payload)
     r = requests.post(BACKEND_URL, json=payload, timeout=10)
     print("Status code:", r.status_code)
     try:
