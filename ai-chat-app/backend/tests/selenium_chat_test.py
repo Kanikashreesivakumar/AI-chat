@@ -6,7 +6,12 @@ submit it, and verify that messages appear in the UI. It requires Chrome to be i
 
 Usage:
     pip install selenium webdriver-manager
-    python selenium_chat_tes
+    python selenium_chat_test.py
+
+Notes:
+- Ensure your backend (127.0.0.1:8000) and frontend (localhost:3000) are running before running this script.
+- If Chrome is not available, configure another webdriver and update the script accordingly.
+"""
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
