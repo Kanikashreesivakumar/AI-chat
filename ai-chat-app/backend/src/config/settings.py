@@ -22,7 +22,7 @@ class Settings:
     TTS_API_URL: str = os.getenv("TTS_API_URL")
 
     def __post_init__(self):
-        # Create data directory if it doesn't exist
+       
         Path(self.VECTOR_DB_PATH).parent.mkdir(parents=True, exist_ok=True)
 
         if not self.OPENAI_API_KEY:
