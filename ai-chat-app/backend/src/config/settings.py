@@ -18,7 +18,7 @@ class Settings:
                                     str(Path(__file__).parent.parent.parent / "data" / "vector_db"))
     
    
-    WHISPER_API_URL: str = os.getenv("WHISPER_API_URL", "https://api.openai.com/v1/audio/transcriptions")
+    WHISPER_API_URL: str = os.getenv("WHISPER_API_URL", "https://api.oi.com/v1/audio/transcriptions")
     TTS_API_URL: str = os.getenv("TTS_API_URL")
 
     def __post_init__(self):
