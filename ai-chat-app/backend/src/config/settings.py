@@ -5,10 +5,7 @@ from pathlib import Path
 load_dotenv()
 
 class Settings:
-    # API Keys
-    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
-    
-    # Database settings
+    # API 
     REDIS_URL: str = os.getenv("REDIS_URL", "redis://localhost:6379")
     
     # Vector store settings
