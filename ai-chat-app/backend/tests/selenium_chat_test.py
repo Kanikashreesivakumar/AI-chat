@@ -4,9 +4,9 @@ Selenium test for the AI-chat app.
 This script will open the frontend at http://localhost:3000, type a message into the chat input,
 submit it, and verify that messages appear in the UI. It requires Chrome to be installed.
 
-    python s
 Usage:
-    pip install selenium webdriver-managerelenium_chat_test.py
+    pip install selenium webdriver-manager
+    python selenium_chat_test.py
 
 Notes:
 - Ensure your backend (127.0.0.1:8000) and frontend (localhost:3000) are running before running this script.
