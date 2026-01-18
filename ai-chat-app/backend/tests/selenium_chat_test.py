@@ -57,8 +57,6 @@ def run_selenium_test():
             time.sleep(poll)
 
         assert user_visible, "User message did not appear in the UI"
-
-        # Wait for assistant response to appear (may be streamed)
         assistant_visible = False
         end = time.time() + 30
         while time.time() < end:
