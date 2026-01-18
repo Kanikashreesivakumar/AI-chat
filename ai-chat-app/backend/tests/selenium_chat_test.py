@@ -50,7 +50,6 @@ def run_selenium_test():
         end = time.time() + timeout
         user_visible = False
         while time.time() < end:
-            # find any element containing the test message
             elems = driver.find_elements(By.XPATH, f"//*[contains(text(), '{test_message}')]")
             if elems:
                 user_visible = True
