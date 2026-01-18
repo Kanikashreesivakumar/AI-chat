@@ -34,11 +34,7 @@ def run_selenium_test():
     try:
         print("Opening frontend at", FRONTEND_URL)
         driver.get(FRONTEND_URL)
-
-        
         time.sleep(2)
-
-        # Find the chat textarea by placeholder text (matches ChatInput component)
         textarea = driver.find_element(By.CSS_SELECTOR, 'textarea[placeholder*="Type your message"]')
         test_message = "Selenium test message"
         textarea.click()
