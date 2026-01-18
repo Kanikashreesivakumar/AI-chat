@@ -45,8 +45,6 @@ def run_selenium_test():
         form.submit()
 
         print("Message submitted, waiting for UI update...")
-
-        # Wait for the user's message to appear in the messages area
         timeout = 15
         poll = 0.5
         end = time.time() + timeout
