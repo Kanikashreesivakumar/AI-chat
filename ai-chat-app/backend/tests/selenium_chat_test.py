@@ -41,7 +41,6 @@ def run_selenium_test():
         textarea.clear()
         textarea.send_keys(test_message)
 
-        # Submit the form: find the closest form and submit, or press Enter
         form = textarea.find_element(By.XPATH, "ancestor::form")
         form.submit()
 
