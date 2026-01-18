@@ -24,7 +24,7 @@ FRONTEND_URL = "http://localhost:3000"
 
 def run_selenium_test():
     options = Options()
-    # use headless mode; change if you want to see the browser
+    
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
