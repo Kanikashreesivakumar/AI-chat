@@ -35,7 +35,7 @@ def run_selenium_test():
         print("Opening frontend at", FRONTEND_URL)
         driver.get(FRONTEND_URL)
 
-        # small sleep to allow page to load; adjust if necessary
+        
         time.sleep(2)
 
         # Find the chat textarea by placeholder text (matches ChatInput component)
