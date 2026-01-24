@@ -60,7 +60,7 @@ def run_selenium_test():
         assistant_visible = False
         end = time.time() + 30
         while time.time() < end:
-          
+           
             assistant_elems = driver.find_elements(By.XPATH, "//*[contains(@class, 'message') or contains(@class, 'bubble') or contains(text(), 'assistant')]")
             if assistant_elems:
                 assistant_visible = True
