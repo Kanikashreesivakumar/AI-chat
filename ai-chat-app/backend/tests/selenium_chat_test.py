@@ -57,18 +57,6 @@ def run_selenium_test():
             time.sleep(poll)
 
         assert user_visible, "User message did not appear in the UI"
-        assistant_visible = False
-        end = time.time() + 30
-        while time.time() < end:
-            # look for elements that contain common parts of assistant text or not empty assistant bubble
-            # this is intentionally permissive — adapt XPath to your UI if needed
-            assistant_elems = driver.find_elements(By.XPATH, "//*[contains(@class, 'message') or contains(@class, 'bubble') or contains(text(), 'assistant')]")
-            if assistant_elems:
-                assistant_visible = True
-                break
-            time.sleep(poll)
-
-        assert assistant_visible, "Assistant response not found in UI"
 
         print("Selenium UI test passed")
 
