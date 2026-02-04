@@ -9,7 +9,6 @@ class Settings:
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
     
     # Database settings
-    REDIS_URL: str = os.getenv("REDIS_URL", "redis://localhost:6379")
     
     # Vector store settings
     EMBEDDING_MODEL: str = os.getenv("EMBEDDING_MODEL", "text-embedding-ada-002")
