@@ -7,8 +7,6 @@ load_dotenv()
 class Settings:
     # API Keys
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
-    
-    # Database settings
     REDIS_URL: str = os.getenv("REDIS_URL", "redis://localhost:6379")
     
     # Vector store settings
