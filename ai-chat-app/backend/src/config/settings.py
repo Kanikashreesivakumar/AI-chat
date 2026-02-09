@@ -9,8 +9,7 @@ class Settings:
     OPENAI_API_KEY: str = os.getenv("OPENAI_API
     CHROMA_DB_URL: str = os.getenv("CHROMA_DB_URL")
     VECTOR_DB_PATH: str = os.getenv("VECTOR_DB_PATH", 
-                                    str(Path(__file__).parent.parent.parent / "data" / "vector_db"))
-    
+                                    str
    
     WHISPER_API_URL: str = os.getenv("WHISPER_API_URL", "https://api.openai.com/v1/audio/transcriptions")
     TTS_API_URL: str = os.getenv("TTS_API_URL")
