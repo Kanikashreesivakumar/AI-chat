@@ -16,6 +16,8 @@ class Settings:
 
     def __post_init__(self):
        
+        Path(self.VECTOR_DB_PATH).parent.mkdir(parents=True, exist_ok=True)
+
         if not self.OPENAI_API_KEY:
             print("Warning: OPENAI_API_KEY not found in environment variables. Some features may not work.")
 
