@@ -10,6 +10,9 @@ class Settings:
     CHROMA_DB_URL: str = os.getenv("CHROMA_DB_URL")
     VECTOR_DB_PATH: str = os.getenv("VECTOR_DB_PATH", 
                                     str
+   
+    WHISPER_API_URL: str = os.getenv("WHISPER_API_URL", "https://api.openai.com/v1/audio/transcriptions")
+    TTS_API_URL: str = os.getenv("TTS_API_URL")
 
     def __post_init__(self):
        
