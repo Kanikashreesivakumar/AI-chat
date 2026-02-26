@@ -13,6 +13,12 @@ class Settings:
    
     WHISPER_API_URL: str = os.getenv("WHISPER_API_URL", "https://api.openai.com/v1/audio/transcriptions")
     TTS_API_URL: str = os.getenv("TTS_API_URL")
+
+    def __post_init__(self):
+       
+        Path(self.VECTOR_DB_PATH).parent.mkdir(parents=True, exist_ok=True)
+
+        if not self.OPENAI_API_KEY:
             print("Warning: OPENAI_API_KEY not found in environment variables. Some features may not work.")
 
 settings = Settings()
